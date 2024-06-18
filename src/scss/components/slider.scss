@@ -4,6 +4,10 @@
     &__wrapper {
         flex-direction: column;
         gap: 3.75rem;
+
+        @media #{$mobile-media-query} {
+            padding: 6.25rem calc(3.25rem + 20px);
+        }
     }
 
     &__item {
@@ -15,6 +19,15 @@
     &__content {
         flex-direction: column;
         gap: 1.25rem;
+        width: 920px;
+
+        @media (max-width: $lg-width) {
+            width: 600px;
+        }
+
+        @media (max-width: $md-width) {
+            width: 100%;
+        }
     }
 }
 

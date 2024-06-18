@@ -1,4 +1,10 @@
-@import '../variables/variables.scss';
+@import "../variables/variables.scss";
+
+.btn-wrapper {
+    @media #{$mobile-media-query} {
+        padding: $prop-for-mobile-mq;
+    }
+}
 
 .btn {
     text-align: center;
@@ -6,6 +12,7 @@
     border-radius: 0.5rem;
     padding: 1.25rem 1.75rem;
     background-color: #f8326d;
+    border-color: #f8326d;
     cursor: pointer;
     color: #fff;
     font-weight: 700;
