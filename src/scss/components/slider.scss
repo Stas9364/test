@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+
+    &__wrapper {
+        flex-direction: column;
+        gap: 3.75rem;
+    }
+
+    &__item {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__content {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
+
+.glide {
+    &__bullets {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 0.5rem;
+    }
+
+    &__bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        cursor: pointer;
+
+        &--active {
+            background-color: #fff;
+        }
+    }
+}

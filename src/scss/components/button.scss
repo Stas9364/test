@@ -1,0 +1,22 @@
+@import '../variables/variables.scss';
+
+.btn {
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.75rem;
+    background-color: #f8326d;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @media (max-width: $sm-width) {
+        width: 100%;
+    }
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #f8326d 40%, #ffb864 100%);
+}
